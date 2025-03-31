@@ -7,6 +7,8 @@
 }
 #taskinput,#tasktime{
     width: 20%;
+    padding-left: 20px;
+    margin-left: 20px;
 }
 
 .body{
@@ -78,7 +80,7 @@ td{
 #display{
   width:auto ; 
   padding: 10px; 
-  margin:10px 100px 20px 100px;
+  /* margin:10px 100px 20px 100px; */
 }
 
 @media screen and (max-width: 768px) {
@@ -118,3 +120,50 @@ td{
       }
 
 }
+
+@media screen and (max-width: 320px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .container-1 {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .Task {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .Task-left {
+        width: 100%;
+    }
+
+    .input {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #taskinput, #tasktime, #newTask, #newedit, button {
+        width: 90%;
+        max-width: 300px;
+    }
+
+    #display {
+        width: 100%;
+        overflow-x: auto;
+        display: block;
+    }
+
+    table {
+        width: 100%;
+    }
+    tbody{
+        width: 100%;
+    }
+}
+
